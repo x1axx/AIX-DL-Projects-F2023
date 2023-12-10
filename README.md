@@ -12,7 +12,7 @@
 
 송패이, 기계공학부, 1162250193@qq.com
 
-### I. Proposal 
+## I. Proposal 
 연구 목적: 이 프로젝트의 연구 목적은 파이썬에서 다양한 회귀 분석 모델을 사용하여 스페인 와인의 점수와 가격에 대한 데이터를 목표로 훈련하고 예측하는 것입니다.연구의 주제는 7,500병의 레드와인에 대한 다양한 기본 정보와 채점을 포함하는 Kaggle 웹사이트에서 발견된 스페인 레드와인 품질 데이터 세트입니다.스페인 와인 데이터 세트를 선택한 이유는 한편으로는 팀원들의 관심 때문이기도 하며, 와인은 항상 사람들의 식탁에서 맛있는 술이었고 스페인은 풍부한 와인 문화와 오랜 역사를 가진 유명한 와인 생산지 중 하나였습니다.스페인은 지중해와 대서양의 중간에 있는 이베리아 반도에 위치하고 있으며, 스페인 와인 양조의 역사는 기원전 1100년으로 거슬러 올라가는 페니키아인들이 와인 양조 기술을 도입하여 지금까지 세계에서 포도 재배 면적이 가장 큰 국가 중 하나이지만 와인 생산량은 프랑스와 이탈리아에 이어 세계 3위에 불과합니다.스페인 와인 산업은 전 세계적으로 중요한 위치를 차지하고 있지만 종종 간과됩니다.국내 와인 상인들이 마케팅 전략에 주의를 기울이지 않는 것 외에도 스페인 사람들은 마시는 와인의 품질에 대한 요구 사항이 높지 않아 제품이 주로 저렴한 와인이며 고품질의 고품질 및 고가 제품이 부족합니다.스페인의 와인 산업은 완전한 법규와 생산 지역, 등급 및 유형 보호 시스템을 갖추고 있으며 스페인에서 가장 유명한 와인은 헤레스 지역에서 생산지 보호와 독특한 양조 방법을 가진 셰리주와 바르셀로나 지역의 와이너리에서 주로 2차 발효를 거쳐 가공된 프랑스 샴페인과 유사한 스파클링 와인입니다.따라서 레드와인의 다양한 지표와 점수 및 가격 간의 관계를 예측하는 모델의 수립은 시장 분석 및 소비자 선호도 변화에 매우 중요합니다.
 
 방법 및 예상 결과: 데이터 세트의 구조를 관찰함으로써 제조업체, 와인 이름, 연도, 점수, 평가 수량, 국가, 지역, 유형, 와인 바디 및 산도의 11가지 속성을 포함할 수 있습니다.국가가 모두 스페인이기 때문에 이 속성은 훈련 과정에서 특정 역할을 하지 않으므로 삭제할 수 있습니다.우리는 점수 또는 가격의 두 가지 속성을 훈련의 목표 변수로 선택할 수 있으며, 얻은 두 가지 속성을 통해 와인 병의 품질을 다른 측면에서 판단하고 관련 산업이 가능한 문제를 개선하는 데 도움이 될 수 있습니다.
@@ -32,7 +32,7 @@ https://scikit-learn.org/stable/modules/linear_model.html
 회귀 분석을 분석 도구로 선택한 이유는 scikit-learn 라이브러리를 사용하여 파이썬에서 모델링할 수 있기 때문입니다.scikit-learn은 머신러닝 모델링을 위한 프로그래밍에 필요한 다양한 함수와 도구를 포함하는 python 기반 머신러닝 라이브러리이며, 데이터 전처리부터 사전 설정 모델 사용, 평가까지 sklearn을 사용하여 많은 복잡한 프로그래밍 프로세스를 학습하고 수행할 필요 없이 간단하고 쉽게 구현할 수 있습니다.회귀분석 자체는 독립변수와 종속변수의 관계를 설정하고 예측할 수 있다는 특징이 있으며, 다양한 데이터 유형에 유연하게 적용할 수 있고 결과를 이해하기 쉬운 장점이 있습니다.
 sklearn 라이브러리에서 사용할 수 있는 다양한 사전 설정 회귀 모델이 제공되었기 때문에 이 보고서에서 단순 회귀 모델, 다중 회귀 모델, 무작위 산림 회귀 모델, 의사 결정 트리 회귀 모델 및 KNN 모델의 5가지 기본 회귀 모델을 선택하여 데이터 세트를 분석할 계획입니다.마지막으로 이러한 모델의 MSE, MAE 및 R2 값을 비교하여 모델의 훈련 정확도를 평가할 수 있습니다.
  
-II. Datasets 
+## II. Datasets 
 데이터세트 소개:This dataset is related to red variants of spanish wines. The dataset describes several popularity and description metrics their effect on it's quality. The datasets can be used for classification or regression tasks. The classes are ordered and not balanced (i.e. the quality goes from almost 5 to 4 points). The task is to predict either the quality of wine or the prices using the given data.
 The dataset contains 7500 different types of red wines from Spain with 11 features that describe their price, rating, and even some flavor description.
 데이터세트 섹션: 
@@ -49,7 +49,7 @@ Attributes information:
 10.body: Body score, defined as the richness and weight of the wine in your mouth [1-5]
 11.acidity: Acidity score, defined as wine's “pucker” or tartness; it's what makes a wine refreshing and your tongue salivate and want another sip [1-5]
 Source: fedesoriano. (April 2022). Spanish Wine Quality Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/datasets/fedesoriano/spanish-wine-quality-dataset
-III. Methodology
+## III. Methodology
 	프로세스 소개
 파이썬을 사용하는 전체 프로세스에는 데이터 가져오기, 전처리, 통계 분석, 훈련 모델 및 결과 표시의 여러 부분이 포함됩니다.모델을 훈련하는 부분에서 우리는 다양한 회귀 모델을 사용했습니다. 선형 회귀, 다항식 회귀, 무작위 포레스트 회귀, 결정 트리 회귀 및 KNN 회귀를 포함합니다. 다음은 간단한 방법의 개요입니다：
 	데이터 준비: 먼저 csv 파일 데이터 세트를 pandas 데이터 상자로 가져온 다음 데이터 세트의 빈 값을 모두 삭제합니다.그런 다음 비숫자 텍스트 속성을 인코딩한 다음 전체 데이터 세트를 표준화해야 후속 데이터 세트가 훈련 중에 모델에 더 적합할 수 있습니다.
@@ -208,7 +208,7 @@ plot_result(y_test, y_pred)
 # compare the results
 pd.DataFrame([LR, Poly, RF, DT, KNN], columns=['MSE', 'MAE', 'R2'], index=['Linear Regression', 'Polynomial Regression', 'Random Forest', 'Decision Tree', 'KNN'])
  
-IV. Evaluation & Analysis
+## IV. Evaluation & Analysis
 Part1：데이터세트 설명
 Table1：빈 값을 제거한 후의 데이터 세트 정보
 <class 'pandas.core.frame.DataFrame'>
@@ -438,10 +438,11 @@ Fig10：KNN model
 
 
  
-V. Conclusion: Discussion
+## V. Conclusion: Discussion
 스페인 레드와인의 품질을 예측하는 프로젝트에서 우리는 파이썬의 여러 회귀 모델을 사용하여 스페인 레드와인의 등급 및 가격 책정 데이터를 분석했습니다. 목적은 다양한 통계 모델을 사용하여 이러한 변수를 훈련하고 예측하는 것입니다. 우리의 연구는 Kaggle에 제공된 스페인 와인 품질과 관련된 데이터 세트를 사용하여 시작되었으며, 속성 분석 및 대상 변수 사용 모델 훈련을 예측하여 강력한 결과와 풍부한 데이터 통찰력을 얻었습니다.우리의 프로젝트는 회귀 모델을 사용하여 스페인 레드와인의 품질을 정확하게 예측할 수 있음을 보여줍니다. 단순 회귀, 다중 회귀, 무작위 산림 회귀, 의사 결정 트리 회귀 및 KNN 모델을 테스트한 후 이러한 모델의 휴리스틱 능력이 다양하며 그 중 일부는 다른 모델보다 더 정확한 결과를 나타냅니다.훈련 결과는 등급을 대상 변수로 사용할 때 무작위 숲 모델이 가장 높은 정확도와 최소 손실을 얻을 수 있음을 보여주었습니다.따라서 점수를 대상 변수로 사용하고 무작위 포레스트 모델을 사용하는 것이 이 데이터 세트에 가장 적합합니다.초점은 일부 와인 평가 등급이 와인의 전체 품질에 상당한 상관 관계가 있음을 보여주는 연구입니다. 이 결과는 와인의 품질이 와인 등급에 영향을 미치는 중요한 결정 요인임을 증명하며, 등급이 높은 와인은 품질이 우수하고 와인 생산자의 경우 더 높은 가격으로 판매할 수 있습니다. 이러한 흥미로운 발견에도 불구하고 우리 모델의 예측은 모델의 정확도를 향상시키기 위해 데이터 세트를 세분화하는 이점을 얻을 수 있습니다. 예를 들어, 와인의 다른 변수 또는 특성을 분석에 통합하면 평가에 더 많은 복잡성과 진정성을 추가하는 동시에 등급 범위를 확장하고 나중에 모델 교육을 위해 더 완전한 데이터 세트를 사용할 때 더 높은 정확도를 얻을 수 있습니다.그러나 우리의 결과는 한계가 없는 것이 아니며 그 중 하나는 데이터 세트가 스페인 와인에만 집중되어 있다는 것입니다. 이것은 이 와인 유형에 대한 구체적인 이해를 제공할 수 있지만 연구 결과는 다른 유형의 와인이나 다른 지리적 지역의 와인에 일반적으로 적용되지 않을 수 있습니다. 또한 다른 측정되지 않은 요인이 와인 등급이나 가격에 영향을 미칠 가능성도 고려되지 않았습니다.
 결론, 회귀 모델을 사용하여 스페인 와인의 품질을 정확하게 예측하는 것은 통찰력 있는 관점을 제공합니다.이러한 발견은 양조업자, 와인 마케터 및 소비자에게 큰 영향을 미칠 수 있습니다.앞으로도 예측 모델의 정확성을 지속적으로 개선하고 개선하고 데이터 세트를 확장하여 더 넓은 범위의 와인과 변수를 포함할 수 있습니다.이러한 데이터 세트에는 여러 국가의 와인이 포함되거나 다른 유형의 와인이 포함될 수 있습니다. 이것은 우리의 발견을 보다 보편적으로 만들고 와인 생산 및 소비의 증가하는 이질성을 충족시킬 수 있습니다.
-VI. Related Work (e.g., existing studies)
+
+## VI. Related Work (e.g., existing studies)
 이 프로젝트에는 다음 출처의 정보가 사용되었습니다.
 스페인 레드 와인에 대한 기본 소개: https://en.wikipedia.org/wiki/Spanish_wine
 스페인 레드 와인에 대한 기본 소개: https://www.thewinesociety.com/discover/explore/regional-guides/spanish-wine-ultimate-guide
