@@ -1,9 +1,9 @@
 # AIX-DL-Projects-F2023
 
-AI+X-Deep Learning Final Project
-Title: 스페인 와인 품질 예측
-Blog: https://github.com/x1axx/AIX-DL-Projects-F2023
-Members: 
+## AI+X-Deep Learning Final Project
+## Title: 스페인 와인 품질 예측
+### Blog: https://github.com/x1axx/AIX-DL-Projects-F2023
+### Members: 
 하걸선, 기계공학부, x1axx@hanyang.ac.kr
 장우위, 기계공학부, zyw125@hanyang.ac.kr
 채야기, 기계공학부, enoctober@hanyang.ac.kr
