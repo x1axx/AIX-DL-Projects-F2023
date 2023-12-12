@@ -1,5 +1,5 @@
 # AIX-DL-Projects-F2023
-
+### 자세한 내용은 첨부파일의 Final project.pdf를 참고하시기 바랍니다.
 ## AI+X-Deep Learning Final Project
 ## Title: 스페인 와인 품질 예측
 ### Blog: https://github.com/x1axx/AIX-DL-Projects-F2023
